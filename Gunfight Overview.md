@@ -46,7 +46,7 @@ Namer - Get user's name and save it
 	OUT: string
 Timer - Sees if you beat the computer in time
 	IN: none
-	OUT: 
+	OUT: float, time
 Draw - The program that runs when the game starts against the computer
 	IN: none
 	OUT: float, time in seconds
@@ -63,10 +63,9 @@ Play again - Asks the user if they want to play again
 	IN: str
 	OUT: bool
 
-
 * Make a very rough outline of the program using information from chunking steps. Include only necessary in/out information.
 	
-* Write out overview for each function as if you were telling a random stupid guy to do it.
+* Write out overview for each function as if you were telling a random stupid guy to do it.	
 
 * Do this for all functions and see how you can break down the process into atomistic functions. The more that functions can be used and reused all around the whole program, the better.
 
