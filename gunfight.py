@@ -54,18 +54,15 @@ def gunfight(badguy_speed):
 	
 	start_time = get_time()
 	with TERM.cbreak():
-		val = ''
-		while val != button:
-			val = TERM.inkey(timeout=badguy_speed)
-			if not val:
-				return badguy_speed
+		val = TERM.inkey(timeout=badguy_speed)
 	end_time = get_time()
-
 	gunshot_display()
 
-	user_speed = end_time - start_time
-	if user_speed < badguy_speed:
+	user_speed = 0
+
+	if user_speed < badguy_speed and val == button:
 		win = True
+		user_speed = end_time - start_time
 
 	return user_speed, win
 
@@ -94,9 +91,10 @@ def you_win(name, score):
 		All hail {name}, who scored {score} points!')
 
 def you_lose(name, score):
-	print(f'You died.\n"Here lies {name}, who scored {score} points.')
+	print(f'You died.\n"Here lies {name}, who scored {score} points."')
 
 def want_to_play():
+	print('Want to play another game?')
 	with TERM.cbreak():
 		val = ''
 		val = TERM.inkey()
@@ -159,9 +157,8 @@ if __name__ == '__main__':
 		intro_to_badguy(badguy_name, badguy_text)
 		user_speed, win = gunfight(badguy_speed)
 
-		score += get_score(user_speed, badguy_speed, level)
-
 		if win:
+			score += get_score(user_speed, badguy_speed, level)
 			if level + 1 == max_level:
 				you_win(name, score)
 				high_scores_list = update_hs_list(

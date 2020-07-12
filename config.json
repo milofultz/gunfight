@@ -2,13 +2,28 @@
     "bad_guys": [
         [
             "Wyatt Earp",
-            3,
+            1,
             "Wyatt Earp never learned to write good."
         ],
         [
             "Lump McBeefBroth",
-            2,
+            0.8,
             "Only famous because he's faster than Wyatt."
+        ],
+        [
+            "George Stanton",
+            0.64,
+            "Friend of John Daker, enemy to everyone else."
+        ],
+        [
+            "Dario",
+            0.5,
+            "A scary man who is mean."
+        ],
+        [
+            "Big Zucc",
+            0.4,
+            "He doesn't thirst for water, only for blood."
         ]
     ],
     "high_scores": [
