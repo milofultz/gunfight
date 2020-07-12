@@ -1,0 +1,28 @@
+{
+    "bad_guys": [
+        [
+            "Wyatt Earp",
+            3,
+            "Wyatt Earp never learned to write good."
+        ],
+        [
+            "Lump McBeefBroth",
+            2,
+            "Only famous because he's faster than Wyatt."
+        ]
+    ],
+    "high_scores": [
+        [
+            "Milo",
+            1156
+        ],
+        [
+            ";iasdfahs",
+            975
+        ],
+        [
+            "mil",
+            907
+        ]
+    ]
+}
